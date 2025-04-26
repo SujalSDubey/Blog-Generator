@@ -54,18 +54,5 @@ This is a web application that uses the **Llama2 model** to generate blog posts 
 
 The app will generate a **Cyber Law** blog targeted at **Researchers**, and it will be close to 300 words in length.
 
-## Troubleshooting
 
-- **"Model path doesn't exist" error**:
-    Ensure the Llama2 model file is placed correctly at `E:/GenerativeAIProjects/models/llama-2-7b-chat.ggmlv3.q8_0.bin`.
-
-- **Word Count Issues**:
-    Adjust the `max_new_tokens` setting in the code for a higher or lower word count.
-
-## License
-This project is licensed under the MIT License.
-
-## Acknowledgements
-- Thanks to **Llama2** for providing the language model.
-- Thanks to **Streamlit** for making web app creation easy and interactive.
 
