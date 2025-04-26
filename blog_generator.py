@@ -5,7 +5,7 @@ from fpdf import FPDF
 # Function to load the Llama model using CTransformers
 @st.cache_resource
 def load_model():
-    model_path = 'E:/GenerativeAIProjects/models/llama-2-7b-chat.ggmlv3.q8_0.bin'
+    model_path = 'path_of_LLM_model'
 
     # Load the Llama model correctly
     llm = AutoModelForCausalLM.from_pretrained(
