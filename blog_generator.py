@@ -11,12 +11,11 @@ def load_model():
     llm = AutoModelForCausalLM.from_pretrained(
         model_path_or_repo_id=model_path,
         model_type='llama',
-        max_new_tokens=600,  # Increase to generate enough words (max 600 tokens = 450-500 words)
+        max_new_tokens=600, 
         temperature=0.01,
     )
     return llm
 
-# Function to generate a blog
 def generate_blog(topic, words, style, llm):
     prompt = f"Write a blog for a {style} job profile on the topic '{topic}' within {words} words."
     response = llm(prompt)
@@ -34,7 +33,7 @@ def create_pdf(blog_text):
     return pdf
 
 # Streamlit UI
-st.set_page_config(page_title="📝 Llama2 Blog Generator", layout="centered")
+st.set_page_config(page_title="📝 Blog Generator", layout="centered")
 st.title("📝 Generate Blogs")
 
 topic = st.text_input("Enter the Blog Topic", placeholder="e.g. Blog on Cyber Security")
