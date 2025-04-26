@@ -52,7 +52,5 @@ This is a web application that uses the **Llama2 model** to generate blog posts 
 - **Word Count**: 300
 - **Target Audience**: Researchers
 
-The app will generate a **Cyber Law** blog targeted at **Researchers**, and it will be close to 300 words in length.
-
 
 
